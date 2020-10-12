@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include<QPushButton>
+#include"subwidget.h" //子窗口头文件
 
 class MainWidget : public QWidget
 {
@@ -17,6 +18,9 @@ public:
 private:
     QPushButton b1;
     QPushButton *b2;
+    QPushButton b3;
+
+    SubWidget w;
 
 };
 

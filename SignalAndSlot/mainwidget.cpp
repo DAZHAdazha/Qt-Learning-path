@@ -38,6 +38,17 @@ MainWidget::MainWidget(QWidget *parent)
      * 槽函数：接受短信的手机
      */
 
+    setWindowTitle("boss");
+    //下面这种和上面完全等价
+    //this->setWindowTitle("boss");
+
+    b3.setParent(this);
+    b3.setText("切换到子窗口");
+    b3.move(50,50);
+
+    //显示子窗口
+    w.show();
+
 }
 
 //定义mySlot函数
