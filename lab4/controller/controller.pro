@@ -3,7 +3,8 @@ QT += core gui widgets
 CONFIG += c++11
 
 SOURCES += \
-        controller.cpp
+        controller.cpp \
+    main.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

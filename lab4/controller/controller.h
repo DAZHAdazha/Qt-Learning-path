@@ -10,8 +10,13 @@ class QSlider;
 
 class Controller: public QGroupBox
 {
+    Q_OBJECT
   public:
     Controller(QString title = "", QWidget* parent = 0);
+
+
+  signals:
+   void valueChanged(int);
 
   private:
     void createWidgets();
@@ -20,4 +25,6 @@ class Controller: public QGroupBox
 
     QLCDNumber* number;
     QSlider* slider;
+public slots:
+ void setValue(int);
 };
